@@ -1,0 +1,6 @@
+export DIGITAL_REGISTER_URL='http://landregistry.local:8003'
+export SMOKE_USERNAME='landregistry'
+export SMOKE_PASSWORD='smoketesting'
+export SMOKE_TITLE_NUMBER='something goes here'
+export SMOKE_PARTIAL_ADDRESS='something goes here'
+export SMOKE_POSTCODE='something goes here'
