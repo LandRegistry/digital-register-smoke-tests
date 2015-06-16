@@ -55,3 +55,11 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# .DS_Store files
+*/.DS_Store
+.DS_Store
+.DS_Store?
+
+# IntelliJ Idea files
+.idea
