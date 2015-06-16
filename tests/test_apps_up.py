@@ -15,5 +15,5 @@ def test_frontend_up():
     # login stuff
     response = requests.post('{}/login?next=titles'.format(REGISTER_TITLE_URL),
                              data={'username': USERNAME, 'password': PASSWORD},
-                             follow_redirects=False)
+                             allow_redirects=False)
     import pdb; pdb.set_trace()
