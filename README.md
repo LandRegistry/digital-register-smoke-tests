@@ -1,10 +1,9 @@
 # Digital register smoke tests
 This repository contains the smoke tests to check that our system is working correctly after deployment
 
+This is written in ruby and we are using rubocop to ensure code standards are kept consistent throughout all our repositories.
+
 
 ## Setup
-To create a virtual env, run the following from a shell:
 
-    mkvirtualenv -p /usr/bin/python3 digital-register-smoke-tests
-    source environment.sh
-    pip install -r requirements.txt
+TBC.
