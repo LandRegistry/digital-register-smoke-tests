@@ -1,0 +1,6 @@
+$DIGITAL_REGISTER_URL = ENV.fetch('DIGITAL_REGISTER_URL', 'http://localhost:8003')
+$SMOKE_USERNAME = ENV.fetch('SMOKE_USERNAME', 'created_login_name')
+$SMOKE_PASSWORD = ENV.fetch('SMOKE_PASSWORD', 'created_password')
+$SMOKE_TITLE_NUMBER = ENV.fetch('SMOKE_TITLE_NUMBER', 'title_number')
+$SMOKE_PARTIAL_ADDRESS = ENV.fetch('SMOKE_PARTIAL_ADDRESS', 'partial_address')
+$SMOKE_POSTCODE = ENV.fetch('SMOKE_POSTCODE', 'postcode')
