@@ -19,4 +19,8 @@ This is to be ran in your vagrant set up using centos-dev-env.  Instructions to 
 
  2. Seed the database for titles and user by running lr-seed-data.
 
- 3. In test_variables.rb amend SMOKE_TITLE_NUMBER, SMOKE_PARTIAL_ADDRESS, and SMOKE_POSTCODE with the title you want the smoke tests to use.
+ 3. In test_variables.rb amend SMOKE_TITLE_NUMBER, SMOKE_PARTIAL_ADDRESS, and SMOKE_POSTCODE with the title you
+ want the smoke tests to use. These variables are set to match the dev environment data.
+ 4. Run the following command:
+
+    ./run_tests.sh
