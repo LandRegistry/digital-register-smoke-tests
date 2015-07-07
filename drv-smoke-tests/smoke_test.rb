@@ -7,7 +7,7 @@ RSpec.describe 'Smoke Tests' do
 
   before :each do |test|
     unless test.metadata[:do_not_log_in]
-      session.visit "#{$DIGITAL_REGISTER_URL}login"
+      visit_login_page(session)
       session.fill_in 'username', with: $TEST_USERNAME
       session.fill_in 'password', with: $TEST_PASSWORD
       session.click_button('signin')
