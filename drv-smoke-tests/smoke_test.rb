@@ -77,17 +77,17 @@ RSpec.describe 'Smoke Tests' do
 end
 
 def visit_title_search_page(page)
-  page.visit "https://digital.integration.beta.landregistryconcept.co.uk/title-search"
+  page.visit "#{$DIGITAL_REGISTER_URL}title-search"
 end
 
 def visit_title_details_page(page, title_number)
-  page.visit "https://digital.integration.beta.landregistryconcept.co.uk/titles/#{title_number}"
+  page.visit "#{$DIGITAL_REGISTER_URL}titles/#{title_number}"
 end
 
 def visit_login_page(page)
-  page.visit "https://digital.integration.beta.landregistryconcept.co.uk/login"
+  page.visit "#{$DIGITAL_REGISTER_URL}login"
 end
 
 def visit_landing_page(page)
-  page.visit "https://digital.integration.beta.landregistryconcept.co.uk/"
+  page.visit "#{$DIGITAL_REGISTER_URL}"
 end
