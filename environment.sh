@@ -1,5 +1,5 @@
 #!/bin/sh
-export DIGITAL_REGISTER_URL='http://landregistry.local:8003/'
+export DIGITAL_REGISTER_URL=https://digital.integration.beta.landregistryconcept.co.uk/
 export SMOKE_USERNAME='userid123'
 export SMOKE_PASSWORD='password123'
 export SMOKE_TITLE_NUMBER='AGL1001'
