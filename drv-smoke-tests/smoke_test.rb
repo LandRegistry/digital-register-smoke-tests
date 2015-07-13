@@ -19,8 +19,7 @@ RSpec.describe 'Smoke Tests' do
       phantomjs_options: [
         '--ignore-ssl-errors=yes',
         '--local-to-remote-url-access=yes',
-        '--ssl-protocol=any',
-        '--debug=true'
+        '--ssl-protocol=any'
       ]
     )
   end
