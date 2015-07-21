@@ -52,21 +52,21 @@ RSpec.describe 'Smoke Tests' do
     page.assert_text('Digital Register Login')
   end
 
-  it 'Can search using a title number' do
+  it 'can search using a title number' do
     visit_title_search_page()
     page.fill_in 'search_term', with: $TEST_TITLE_NUMBER
     page.click_button('Search')
     page.assert_text("Summary of title #{$TEST_TITLE_NUMBER}")
   end
 
-  it 'it can navigate back to the search page' do
+  it 'can navigate to the search page from title details' do
     visit_title_details_page($TEST_TITLE_NUMBER)
     page.assert_text('Summary of title')
     page.click_link('Find a title')
     page.assert_text('Search for the title of any property in England and Wales')
   end
 
-  it 'Can search using the postcode' do
+  it 'can search using the postcode' do
     visit_title_search_page()
     page.fill_in 'search_term', with: $TEST_TITLE_POSTCODE
     page.click_button('Search')
@@ -79,12 +79,6 @@ RSpec.describe 'Smoke Tests' do
     page.click_button('Search')
     page.click_link($TEST_TITLE_SEARCH_RESULT_TEXT)
     page.assert_text("Summary of title #{$TEST_TITLE_NUMBER}")
-  end
-
-  it 'can navigate back to the search page' do
-    visit_title_details_page($TEST_TITLE_NUMBER)
-    page.click_link('Find a title')
-    page.assert_text('Search for the title of any property in England and Wales')
   end
 
   it 'can search using an address string' do
