@@ -47,7 +47,7 @@ RSpec.describe 'Smoke Tests' do
     page.fill_in 'username', with: $TEST_USERNAME
     page.fill_in 'password', with: $TEST_PASSWORD
     page.click_button('signin')
-    page.assert_text('Search for the title of any property in England and Wales')
+    page.assert_text('Search the land and property register')
     page.click_link('Sign out')
     page.assert_text('Digital Register Login')
   end
@@ -62,8 +62,8 @@ RSpec.describe 'Smoke Tests' do
   it 'can navigate to the search page from title details' do
     visit_title_details_page($TEST_TITLE_NUMBER)
     page.assert_text('Summary of title')
-    page.click_link('Find a title')
-    page.assert_text('Search for the title of any property in England and Wales')
+    page.click_link('Search the land and property register')
+    expect(page).to have_selector('h1', text: 'Search the land and property register')
   end
 
   it 'can search using the postcode' do
